@@ -1,97 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+		<title>Workday</title>
 
-    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
-    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link
-      rel="stylesheet"
-      href="reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section
-          data-markdown
-          data-separator="-----"
-          data-separator-vertical="---"
-        >
-          <textarea data-template>
-            # Title Page
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-auto-animate>
+						<h5 data-id="header">Potential new features</h5>
+						<ul style="font-size: xx-large; list-style: none;" data-id="bullets">
+							<li data-id="voice">🎤 Voice assistant</li>
+							<li data-id="chatbot">💻 Chatbot</li>
+							<li data-id="email">📧  Email text scanner</li>
+							<li data-id="car/taxi">🚕 Connect car/taxi services</li>
+						</ul>
+					</section>
+					<section>
+						<div>
+							<h5>Considerations</h5>
+							<ul style="font-size: xx-large;">
+								<li>1⁄3 of expenses are submitted via a mobile device</li>
+								<li>Expenses below $25 do not require a receipt</li>
+								<li>Failed submissions take 3 times longer to process</li>
+								<li>~6% of submissions fail</li>
+							</ul> 
+						</div>
+					</section>
+					<section>
+						<div>
+							<h5>Current features</h5>
+							<ul style="font-size: xx-large;">
+								<li>corporate credit card w/ auto sync</li>
+								<li>receipt photo OCR</li>
+							</ul> 
+						</div>
+					</section>
+				</section>
+				<section data-auto-animate>
+					<table>
+						<tr style="font-size: xx-large;">
+							<th width="45%">
+								🧭 Guided Input Services
+							</th>
+							<th width="10%">
+							</th>
+							<th width="45%">
+								🤖 Automated Input Services
+							</th>
+						</tr>
+						<tr>
+							<td width="45%">
+								<ul style="font-size: x-large; list-style: none;" data-id="bullets">
+									<br />
+									<li>Interface Services</li>
+									<ul style="list-style: none;">
+										<li data-id="voice">🎤 Voice assistant</li>
+										<li data-id="chatbot">💻 Chatbot</li>
+									</ul>
+									<br />
+									<li>Platform Services</li>
+									<ul style="list-style: none;">
+										<li>🪜 Workflow manager</li>
+										<li>📝 Expense manager</li>
+									</ul>
+									<br />
+									<li>Pros</li>
+									<ul style="list-style: none;">
+										<li>✔️ Reduces cognitive load</li>
+									</ul>
+									<br />
+									<li>Cons</li>
+									<ul style="list-style: none;">
+										<li>✖️ Still requires user input</li>
+									</ul>
+								</ul>
+							</td>
+							<td width="10%">
+							</td>
+							<td width="45%">
+								<ul style="font-size: x-large; list-style: none;" data-id="bullets">
+									<br />
+									<li>Ingestion Services</li>
+									<ul style="list-style: none;">
+										<li data-id="email">📧  Email text scanner</li>
+										<li data-id="car/taxi">🚕 Connect car/taxi services</li>
+									</ul>
+									<br />
+									<li>Platform Services</li>
+									<ul style="list-style: none;">
+										<li>🗂️ AI Categorizer</li>
+										<li>📝 Expense manager</li>
+									</ul>
+									<br />
+									<li>Pros</li>
+									<ul style="list-style: none;">
+										<li>✔️ User review instead of input</li>
+									</ul>
+									<br />
+									<li>Cons</li>
+									<ul style="list-style: none;">
+										<li>✖️ Privacy concerns</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
 
-            ### Date
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
 
-            -----
-            
-            Vertical slides are separated by `- - -`
-            
-            ---
-            
-            Vertical slides are separated by `- - -` .
-            
-            ---
-            
-            Vertical slides are separated by `- - -` ..
-     
-            -----
-            
-            # title
-            ## skills
-            * one
-            * two
-            * three
-            
-            ## heading
-            8. three
-            1. one
-            1. two
-         
-            
-            -----
-            
-
-            # Questions
-
-            -----
-
-            ## made with
-
-            #### [reveal.js](https://github.com/hakimel/reveal.js)
-
-            #### [excalidraw](https://github.com/excalidraw/excalidraw)
-
-          </textarea>
-        </section>
-      </div>
-    </div>
-
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>
-    <script src="reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="reveal.js/plugin/zoom/zoom.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
-
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
-      });
-    </script>
-  </body>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
